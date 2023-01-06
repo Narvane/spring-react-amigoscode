@@ -13,7 +13,7 @@ public class StudentController {
 
     @GetMapping
     public List<Student> getAllStudents() {
-        List<Student> students = Arrays.asList(
+        return Arrays.asList(
                 new Student(
                         1L,
                         "Jamila",
@@ -25,6 +25,6 @@ public class StudentController {
                         "alex@amigoscode.edu",
                         Gender.MALE)
         );
-        return students;
     }
+
 }
